@@ -8,6 +8,7 @@
 | Nearby `4.6`-based checkout with small local drift | Best effort | Use `--allow-base-mismatch`, expect conflict resolution, then replay `references/recent-commit-deltas.md` |
 | Older `4.5.x` branches | Not drop-in | Use this package as a public reference only |
 | Newer upstream than the supported base | Not drop-in | Treat as forward-port work, not as a clean apply |
+| Godot 4.8 beta `b47a795aa5` ([`Visow/godot`](https://github.com/Visow/godot/tree/wechat-minigame-4.8.0-beta), branch `wechat-minigame-4.8.0-beta`) | Forward-ported, standard WebGL only | Do not run `apply_godot_patchset.py`. The port is already applied on that branch. `use_wx_glx` stays off until a matching `libemscriptenglx` is supplied. No `4.8` export template is published yet |
 
 ## Optional Modules
 
